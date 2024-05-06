@@ -1,6 +1,7 @@
 import React from 'react'
 import { stockdata } from './common/Helper';
 import phone from '../assets/images/phone.png'
+import ellipse from '../assets/images/elipse.png'
 
 function Investing() {
     const data = stockdata.map((stockdata, index) => (
@@ -13,7 +14,7 @@ function Investing() {
         </div>
     ));
     return (
-        <>
+        <div className='relative'>
             <div className='max-w-[1140px] px-3 mx-auto lg:pt-12 pt-7'>
                 <h2 className='font-bold  lg:text-md text-xxl  text-center mleading-60 text-white'>How to Benefit By Investing In <span className='lg:block'>AI Stocks For High Returns</span></h2>
                 <p className='font-normal text-base text-center leading-6 text-offgray lg:pt-5 pt-3'>Major AI Stocks such as Microsoft and Nvidia have surged over 80% in <span className='lg:block'>the past year. This giants are expected to grow 130.66% in 2024</span></p>
@@ -26,7 +27,8 @@ function Investing() {
                     </div>
                 </div>
             </div>
-        </>
+            <img src={ellipse} alt="ellipse" className='absolute right-0 top-[55%] lg:block hidden' />
+        </div>
     )
 }
 export default Investing

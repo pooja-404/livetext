@@ -6,10 +6,10 @@ function Statistics() {
         <div className='lg:w-4/12 sm:w-1/2 mt-7 lg:mt-0  px-3 w-full mx-auto' key={index}>
             <div class="h-[270px] w-[270px] rounded-full bg-circlegradient p-[8px] mx-auto">
                 <div class="flex h-full w-full items-center justify-center rounded-full bg-[#17151A]">
-                    <h2 className='font-bold text-white text-lg leading-107 text-center'>{statsdata.head}</h2>
+                    <h2 className='font-bold text-white text-lg leading-107 text-center '>{statsdata.head}</h2>
                 </div>
             </div>
-            <p className='text-white font-semibold text-xxl leading-46 text-center md:max-w-[230px] mx-auto pt-9'>{statsdata.para}</p>
+            <p className='text-white font-semibold lg:text-xxl text-xl lg:leading-46 text-center md:max-w-[230px] mx-auto pt-9'>{statsdata.para}</p>
         </div>
     ));
     return (
